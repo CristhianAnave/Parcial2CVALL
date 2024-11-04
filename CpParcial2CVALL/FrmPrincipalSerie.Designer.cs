@@ -201,7 +201,7 @@
 			this.lblEpisodio.Name = "lblEpisodio";
 			this.lblEpisodio.Size = new System.Drawing.Size(94, 27);
 			this.lblEpisodio.TabIndex = 13;
-			this.lblEpisodio.Text = "Episódio:";
+			this.lblEpisodio.Text = "Episodios:";
 			// 
 			// nudEpisodios
 			// 
@@ -223,9 +223,9 @@
 			this.lblFechaEstreno.ForeColor = System.Drawing.Color.White;
 			this.lblFechaEstreno.Location = new System.Drawing.Point(29, 267);
 			this.lblFechaEstreno.Name = "lblFechaEstreno";
-			this.lblFechaEstreno.Size = new System.Drawing.Size(244, 27);
+			this.lblFechaEstreno.Size = new System.Drawing.Size(165, 27);
 			this.lblFechaEstreno.TabIndex = 15;
-			this.lblFechaEstreno.Text = "Ajusta a la fecha de estreno :";
+			this.lblFechaEstreno.Text = "Fecha de Estreno :";
 			// 
 			// btnNuevo
 			// 
@@ -325,7 +325,6 @@
 			this.txtFechaEstreno.Size = new System.Drawing.Size(140, 26);
 			this.txtFechaEstreno.TabIndex = 106;
 			this.txtFechaEstreno.Enter += new System.EventHandler(this.txtFechaEstreno_Enter);
-			this.txtFechaEstreno.Leave += new System.EventHandler(this.txtFechaEstreno_Leave);
 			// 
 			// mtcFechaEstreno
 			// 

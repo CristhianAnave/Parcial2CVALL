@@ -34,6 +34,8 @@ namespace CpParcial2CVALL
 			dgvSerie.Columns["director"].HeaderText = "DIRECTOR";
 			dgvSerie.Columns["episodios"].HeaderText = "EPISODIO";
 			dgvSerie.Columns["fechaEstreno"].HeaderText = "FECHA DE ESTRENO";
+			dgvSerie.Columns["usuarioRegistro"].HeaderText = "USUARIO REGISTRO";
+			dgvSerie.Columns["fechaRegistro"].HeaderText = "FECHA DE REGISTRO";
 
 			btnEditar.Enabled = lista.Count > 0;
 			btnEliminar.Enabled = lista.Count > 0;
@@ -206,6 +208,7 @@ namespace CpParcial2CVALL
 		  txtSinopsis.Text = string.Empty;
 		  txtDirector.Text = string.Empty;
 		  nudEpisodios.Value = 0;
+          txtFechaEstreno.Text = string.Empty;
 		}
 
 		private void DesactivarCampos()
@@ -213,19 +216,20 @@ namespace CpParcial2CVALL
 			txtTitulo.Enabled = false;
 			txtSinopsis.Enabled = false;
 			txtDirector.Enabled = false;
-
+			txtFechaEstreno.Enabled = false; 
 		}
 		private void HabilitarCampos()
 		{
 			txtTitulo.Enabled = true;
 			txtSinopsis.Enabled = true;
 			txtDirector.Enabled = true;
-
+			txtFechaEstreno.Enabled=true;
 		}
 
 		private void mtcPrueba_DateSelected(object sender, DateRangeEventArgs e)
 		{
 			txtFechaEstreno.Text = mtcFechaEstreno.SelectionStart.ToString("dd/MM/yyyy");
+			mtcFechaEstreno.Visible = false;
 		}
 
 		private void txtFechaEstreno_Enter(object sender, EventArgs e)
@@ -235,9 +239,5 @@ namespace CpParcial2CVALL
 			mtcFechaEstreno.Visible = true; // Mostrar el calendario
 		}
 
-		private void txtFechaEstreno_Leave(object sender, EventArgs e)
-		{
-
-		}
 	}
 }
