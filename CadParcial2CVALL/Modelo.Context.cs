@@ -15,10 +15,10 @@ namespace CadParcial2CVALL
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class Parcial2CVALLEntities : DbContext
+    public partial class Parcial2CVALLEntities1 : DbContext
     {
-        public Parcial2CVALLEntities()
-            : base("name=Parcial2CVALLEntities")
+        public Parcial2CVALLEntities1()
+            : base("name=Parcial2CVALLEntities1")
         {
         }
     

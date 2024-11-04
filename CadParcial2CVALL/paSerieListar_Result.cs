@@ -20,6 +20,7 @@ namespace CadParcial2CVALL
         public int episodios { get; set; }
         public Nullable<System.DateTime> fechaEstreno { get; set; }
         public short estado { get; set; }
+        public string tipoClasificacion { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
     }

@@ -56,6 +56,8 @@
 			this.erpFechaEstreno = new System.Windows.Forms.ErrorProvider(this.components);
 			this.txtFechaEstreno = new System.Windows.Forms.TextBox();
 			this.mtcFechaEstreno = new System.Windows.Forms.MonthCalendar();
+			this.lblTipoClasificacion = new System.Windows.Forms.Label();
+			this.cbxTipoClasificacion = new System.Windows.Forms.ComboBox();
 			((System.ComponentModel.ISupportInitialize)(this.dgvSerie)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudEpisodios)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpTitulo)).BeginInit();
@@ -73,6 +75,7 @@
 			this.dgvSerie.Location = new System.Drawing.Point(320, 144);
 			this.dgvSerie.Name = "dgvSerie";
 			this.dgvSerie.ReadOnly = true;
+			this.dgvSerie.RowHeadersWidth = 62;
 			this.dgvSerie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvSerie.Size = new System.Drawing.Size(752, 370);
 			this.dgvSerie.TabIndex = 0;
@@ -128,9 +131,9 @@
 			this.lblListaSeries.BackColor = System.Drawing.Color.Black;
 			this.lblListaSeries.Font = new System.Drawing.Font("Sitka Small", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblListaSeries.ForeColor = System.Drawing.Color.White;
-			this.lblListaSeries.Location = new System.Drawing.Point(1, -1);
+			this.lblListaSeries.Location = new System.Drawing.Point(-1, -1);
 			this.lblListaSeries.Name = "lblListaSeries";
-			this.lblListaSeries.Size = new System.Drawing.Size(1087, 56);
+			this.lblListaSeries.Size = new System.Drawing.Size(1089, 56);
 			this.lblListaSeries.TabIndex = 5;
 			this.lblListaSeries.Text = "Lista de Series";
 			this.lblListaSeries.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -232,7 +235,7 @@
 			this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnNuevo.Image = global::CpParcial2CVALL.Properties.Resources.Nuevo;
-			this.btnNuevo.Location = new System.Drawing.Point(33, 344);
+			this.btnNuevo.Location = new System.Drawing.Point(33, 406);
 			this.btnNuevo.Name = "btnNuevo";
 			this.btnNuevo.Size = new System.Drawing.Size(108, 51);
 			this.btnNuevo.TabIndex = 105;
@@ -246,7 +249,7 @@
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnEditar.Image = global::CpParcial2CVALL.Properties.Resources.editar;
-			this.btnEditar.Location = new System.Drawing.Point(211, 401);
+			this.btnEditar.Location = new System.Drawing.Point(211, 463);
 			this.btnEditar.Name = "btnEditar";
 			this.btnEditar.Size = new System.Drawing.Size(93, 51);
 			this.btnEditar.TabIndex = 104;
@@ -260,7 +263,7 @@
 			this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnEliminar.Image = global::CpParcial2CVALL.Properties.Resources.eliminar;
-			this.btnEliminar.Location = new System.Drawing.Point(33, 460);
+			this.btnEliminar.Location = new System.Drawing.Point(33, 522);
 			this.btnEliminar.Name = "btnEliminar";
 			this.btnEliminar.Size = new System.Drawing.Size(108, 51);
 			this.btnEliminar.TabIndex = 103;
@@ -274,7 +277,7 @@
 			this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnCerrar.Image = global::CpParcial2CVALL.Properties.Resources.cerrar;
-			this.btnCerrar.Location = new System.Drawing.Point(211, 458);
+			this.btnCerrar.Location = new System.Drawing.Point(211, 520);
 			this.btnCerrar.Name = "btnCerrar";
 			this.btnCerrar.Size = new System.Drawing.Size(93, 51);
 			this.btnCerrar.TabIndex = 102;
@@ -288,7 +291,7 @@
 			this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnGuardar.Image = global::CpParcial2CVALL.Properties.Resources.Guardar;
-			this.btnGuardar.Location = new System.Drawing.Point(33, 401);
+			this.btnGuardar.Location = new System.Drawing.Point(33, 463);
 			this.btnGuardar.Name = "btnGuardar";
 			this.btnGuardar.Size = new System.Drawing.Size(108, 51);
 			this.btnGuardar.TabIndex = 101;
@@ -333,13 +336,42 @@
 			this.mtcFechaEstreno.TabIndex = 107;
 			this.mtcFechaEstreno.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.mtcPrueba_DateSelected);
 			// 
+			// lblTipoClasificacion
+			// 
+			this.lblTipoClasificacion.BackColor = System.Drawing.Color.Black;
+			this.lblTipoClasificacion.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTipoClasificacion.ForeColor = System.Drawing.Color.White;
+			this.lblTipoClasificacion.Location = new System.Drawing.Point(29, 330);
+			this.lblTipoClasificacion.Name = "lblTipoClasificacion";
+			this.lblTipoClasificacion.Size = new System.Drawing.Size(165, 27);
+			this.lblTipoClasificacion.TabIndex = 108;
+			this.lblTipoClasificacion.Text = "Tipo Clasificacion:";
+			// 
+			// cbxTipoClasificacion
+			// 
+			this.cbxTipoClasificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbxTipoClasificacion.FormattingEnabled = true;
+			this.cbxTipoClasificacion.Items.AddRange(new object[] {
+            "A - Para todo Publico",
+            "B - Niños cualquier Edad",
+            "B12 - Publico de 12 años en adelante",
+            "B15 - Publico de 15 años en adelante",
+            "C - Para mayores de 18 años"});
+			this.cbxTipoClasificacion.Location = new System.Drawing.Point(33, 360);
+			this.cbxTipoClasificacion.Name = "cbxTipoClasificacion";
+			this.cbxTipoClasificacion.Size = new System.Drawing.Size(271, 28);
+			this.cbxTipoClasificacion.TabIndex = 109;
+			// 
 			// FrmPrincipal
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+			this.AutoSize = true;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
 			this.BackgroundImage = global::CpParcial2CVALL.Properties.Resources.serie;
-			this.ClientSize = new System.Drawing.Size(1086, 526);
+			this.ClientSize = new System.Drawing.Size(1082, 579);
+			this.Controls.Add(this.cbxTipoClasificacion);
+			this.Controls.Add(this.lblTipoClasificacion);
 			this.Controls.Add(this.mtcFechaEstreno);
 			this.Controls.Add(this.txtFechaEstreno);
 			this.Controls.Add(this.btnNuevo);
@@ -362,7 +394,9 @@
 			this.Controls.Add(this.btnClear);
 			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.dgvSerie);
+			this.MaximizeBox = false;
 			this.Name = "FrmPrincipal";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "::: Serie - Parcial2CVALL :::";
 			this.Load += new System.EventHandler(this.FrmPrincipal_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dgvSerie)).EndInit();
@@ -406,6 +440,8 @@
 		private System.Windows.Forms.ErrorProvider erpFechaEstreno;
 		private System.Windows.Forms.TextBox txtFechaEstreno;
 		private System.Windows.Forms.MonthCalendar mtcFechaEstreno;
+		private System.Windows.Forms.ComboBox cbxTipoClasificacion;
+		private System.Windows.Forms.Label lblTipoClasificacion;
 	}
 }
 

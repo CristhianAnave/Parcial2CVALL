@@ -11,10 +11,11 @@
     <Property Name="episodios" Type="Int32" Nullable="false" />
     <Property Name="fechaEstreno" Type="DateTime" Precision="0" />
     <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="tipoClasificacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
   </EntityType>
-  <EntityContainer Name="Parcial2CVALLEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="Parcial2CVALLEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Serie" EntityType="Self.Serie" />
     <FunctionImport Name="paSerieListar" ReturnType="Collection(Parcial2CVALLModel.paSerieListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
@@ -28,6 +29,7 @@
     <Property Type="Int32" Name="episodios" Nullable="false" />
     <Property Type="DateTime" Name="fechaEstreno" Nullable="true" />
     <Property Type="Int16" Name="estado" Nullable="false" />
+    <Property Type="String" Name="tipoClasificacion" Nullable="false" MaxLength="200" />
     <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
     <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
   </ComplexType>

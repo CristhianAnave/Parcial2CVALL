@@ -10,3 +10,15 @@ C:\Users\DELL\Desktop\2doParcialsis457\Parcial2CVALL\CadParcial2CVALL\obj\Debug\
 C:\Users\DELL\Desktop\2doParcialsis457\Parcial2CVALL\CadParcial2CVALL\obj\Debug\CadParci.796E42F4.Up2Date
 C:\Users\DELL\Desktop\2doParcialsis457\Parcial2CVALL\CadParcial2CVALL\obj\Debug\CadParcial2CVALL.dll
 C:\Users\DELL\Desktop\2doParcialsis457\Parcial2CVALL\CadParcial2CVALL\obj\Debug\CadParcial2CVALL.pdb
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\bin\Debug\CadParcial2CVALL.dll.config
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\bin\Debug\CadParcial2CVALL.dll
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\bin\Debug\CadParcial2CVALL.pdb
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\obj\Debug\CadParcial2CVALL.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\obj\Debug\CadParcial2CVALL.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\obj\Debug\CadParci.796E42F4.Up2Date
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\obj\Debug\CadParcial2CVALL.dll
+C:\Users\DELL\Desktop\chido\Parcial2CVALL\CadParcial2CVALL\obj\Debug\CadParcial2CVALL.pdb

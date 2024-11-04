@@ -11,6 +11,7 @@
     <Property Name="episodios" Type="int" Nullable="false" />
     <Property Name="fechaEstreno" Type="date" />
     <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="tipoClasificacion" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
   </EntityType>

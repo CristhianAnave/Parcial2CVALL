@@ -11,7 +11,7 @@ namespace ClnParcial2CVALL
 	{
 		public static int insertar(Serie serie)
 		{
-			using (var context = new Parcial2CVALLEntities())
+			using (var context = new Parcial2CVALLEntities1())
 			{
 				context.Serie.Add(serie);
 				context.SaveChanges();
@@ -21,7 +21,7 @@ namespace ClnParcial2CVALL
 
 		public static int actualizar(Serie serie)
 		{
-			using (var context = new Parcial2CVALLEntities())
+			using (var context = new Parcial2CVALLEntities1())
 			{
 				var existente = context.Serie.Find(serie.id);
 				existente.titulo = serie.titulo;
@@ -29,14 +29,16 @@ namespace ClnParcial2CVALL
 				existente.director = serie.director;
 				existente.episodios = serie.episodios;
 				existente.fechaEstreno = serie.fechaEstreno;
+				existente.tipoClasificacion = serie.tipoClasificacion;
 				existente.usuarioRegistro = serie.usuarioRegistro;
+				
 				return context.SaveChanges();
 			}
 		}
 
 		public static int eliminar(int id, string usuario)
 		{
-			using (var context = new Parcial2CVALLEntities())
+			using (var context = new Parcial2CVALLEntities1())
 			{
 				var serie = context.Serie.Find(id);
 				serie.estado = -1;
@@ -47,7 +49,7 @@ namespace ClnParcial2CVALL
 
 		public static Serie obtenerUno(int id)
 		{
-			using (var context = new Parcial2CVALLEntities())
+			using (var context = new Parcial2CVALLEntities1())
 			{
 				return context.Serie.Find(id);
 			}
@@ -55,7 +57,7 @@ namespace ClnParcial2CVALL
 
 		public static List<Serie> listar()
 		{
-			using (var context = new Parcial2CVALLEntities())
+			using (var context = new Parcial2CVALLEntities1())
 			{
 				return context.Serie.Where(x => x.estado != -1).ToList();
 			}
@@ -63,7 +65,7 @@ namespace ClnParcial2CVALL
 
 		public static List<paSerieListar_Result> listarPa(string parametro)
 		{
-			using (var context = new Parcial2CVALLEntities())
+			using (var context = new Parcial2CVALLEntities1())
 			{
 				return context.paSerieListar(parametro).ToList();
 			}

@@ -34,6 +34,7 @@ namespace CpParcial2CVALL
 			dgvSerie.Columns["director"].HeaderText = "DIRECTOR";
 			dgvSerie.Columns["episodios"].HeaderText = "EPISODIO";
 			dgvSerie.Columns["fechaEstreno"].HeaderText = "FECHA DE ESTRENO";
+			dgvSerie.Columns["tipoClasificacion"].HeaderText = "TIPO DE CLASIFICACION";
 			dgvSerie.Columns["usuarioRegistro"].HeaderText = "USUARIO REGISTRO";
 			dgvSerie.Columns["fechaRegistro"].HeaderText = "FECHA DE REGISTRO";
 
@@ -92,6 +93,8 @@ namespace CpParcial2CVALL
 				serie.sinopsis = txtSinopsis.Text.Trim();
 				serie.director = txtDirector.Text.Trim();
 				serie.episodios = (int)nudEpisodios.Value;
+				serie.tipoClasificacion = cbxTipoClasificacion.Text;
+
 
 				DateTime fechaEstreno;
 				if (DateTime.TryParseExact(txtFechaEstreno.Text.Trim(), "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out fechaEstreno))
@@ -173,6 +176,7 @@ namespace CpParcial2CVALL
 			txtSinopsis.Text = serie.sinopsis;
 			txtDirector.Text = serie.director;
 			nudEpisodios.Value = serie.episodios;
+			cbxTipoClasificacion.Text = serie.tipoClasificacion;
 			if (serie.fechaEstreno.HasValue)
 			{
 				txtFechaEstreno.Text = serie.fechaEstreno.Value.ToString("dd/MM/yyyy");
@@ -209,6 +213,7 @@ namespace CpParcial2CVALL
 		  txtDirector.Text = string.Empty;
 		  nudEpisodios.Value = 0;
           txtFechaEstreno.Text = string.Empty;
+			//cbxCargo.SelectedIndex = -1;
 		}
 
 		private void DesactivarCampos()

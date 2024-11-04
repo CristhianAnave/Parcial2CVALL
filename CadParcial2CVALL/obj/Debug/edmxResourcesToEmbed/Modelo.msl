@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Parcial2CVALLModelStoreContainer" CdmEntityContainer="Parcial2CVALLEntities">
+  <EntityContainerMapping StorageEntityContainer="Parcial2CVALLModelStoreContainer" CdmEntityContainer="Parcial2CVALLEntities1">
     <EntitySetMapping Name="Serie">
       <EntityTypeMapping TypeName="Parcial2CVALLModel.Serie">
         <MappingFragment StoreEntitySet="Serie">
@@ -11,6 +11,7 @@
           <ScalarProperty Name="episodios" ColumnName="episodios" />
           <ScalarProperty Name="fechaEstreno" ColumnName="fechaEstreno" />
           <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="tipoClasificacion" ColumnName="tipoClasificacion" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
         </MappingFragment>
@@ -26,6 +27,7 @@
           <ScalarProperty Name="episodios" ColumnName="episodios" />
           <ScalarProperty Name="fechaEstreno" ColumnName="fechaEstreno" />
           <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="tipoClasificacion" ColumnName="tipoClasificacion" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
         </ComplexTypeMapping>
